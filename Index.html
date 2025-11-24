@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aman Saxena - Mechanic Portfolio</title>
+
+<!-- INTERNAL CSS -->
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background: #f5f5f5;
+}
+
+header {
+background: #222;
+color: white;
+padding: 20px;
+text-align: center;
+}
+
+nav {
+background: #333;
+padding: 12px;
+text-align: center;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 15px;
+font-size: 18px;
+}
+
+nav a:hover {
+color: #ffcc00;
+}
+
+section {
+padding: 40px;
+background: white;
+margin: 20px;
+border-radius: 10px;
+}
+
+h2 {
+color: #333;
+}
+
+.service-list {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+}
+
+.service-box {
+padding: 20px;
+background: #ececec;
+border-radius: 10px;
+text-align: center;
+font-size: 18px;
+font-weight: bold;
+}
+
+footer {
+background: #222;
+color: white;
+padding: 15px;
+text-align: center;
+margin-top: 40px;
+}
+
+/* Contact Form */
+input, textarea {
+width: 100%;
+padding: 12px;
+margin: 8px 0;
+border-radius: 5px;
+border: 1px solid gray;
+}
+
+button {
+padding: 12px 25px;
+background: #333;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button:hover {
+background: #ffcc00;
+color: #000;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Aman Saxena</h1>
+<p>Bike & Car Mechanic – 14+ Years of Experience</p>
+<p>📞 Mobile: 9568148950 | 🇮🇳 India</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Get in Touch</a>
+</nav>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+<h2>About Me</h2>
+<p>Hello! I am <b>Aman Saxena</b>, a professional <b>bike and car mechanic</b> from India with over <b>14 years of experience</b>.
+I specialize in vehicle servicing, engine repair, diagnostics, and complete maintenance solutions for all car and bike models.</p>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services">
+<h2>Services</h2>
+
+<div class="service-list">
+<div class="service-box">Full Car Servicing</div>
+<div class="service-box">Engine Repair & Overhaul</div>
+<div class="service-box">Bike Full Servicing</div>
+<div class="service-box">Clutch & Brake Repair</div>
+<div class="service-box">OBD Computer Diagnostics</div>
+<div class="service-box">Electrical & Wiring Work</div>
+<div class="service-box">AC Repair & Gas Refill</div>
+<div class="service-box">Emergency Breakdown Help</div>
+</div>
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<section id="experience">
+<h2>Experience</h2>
+<p>I have worked with top automobile service centers across India. My skills include:</p>
+
+<ul>
+<li>Expert in engine repair and diagnostics</li>
+<li>Serviced 5000+ bikes & cars</li>
+<li>Experience with Maruti, Hyundai, Honda, Tata, Hero, Yamaha, RE, etc.</li>
+<li>Trained multiple junior mechanics</li>
+<li>Strong problem-solving and customer service skills</li>
+</ul>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+<h2>Get in Touch</h2>
+
+<form id="contactForm">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Your Email" required>
+<textarea id="message" rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+<p id="status" style="color:green; font-weight:bold;"></p>
+</section>
+
+<footer>
+© 2025 Aman Saxena | Professional Bike & Car Mechanic
+</footer>
+
+<!-- INTERNAL JAVASCRIPT -->
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+event.preventDefault();
+
+document.getElementById("status").innerText =
+"Thank you! Your message has been sent.";
+});
+</script>
+
+</body>
+</html>
